@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portrait Photography</title>
+    <link rel="stylesheet" href="portrait-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <nav>
+        <div class="logo">Lens & Light</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="portrait.html" class="active">Portrait</a>
+            <a href="wedding.html">Wedding</a>
+            <a href="street.html">Street</a>
+            <a href="nature.html">Nature</a>
+        </div>
+        <div class="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <header class="portrait-hero">
+        <div class="hero-content">
+            <h1 class="reveal-text">Capturing Souls</h1>
+            <p class="fade-in">Every Face Tells a Story</p>
+        </div>
+        <div class="floating-frames">
+            <div class="frame" style="--delay: 0s">
+                <img src="https://i.pinimg.com/originals/b2/b7/19/b2b719ea311c46d312620710997a5197.jpg" alt="Portrait 1">
+            </div>
+            <div class="frame" style="--delay: 0.2s">
+                <img src="" alt="Portrait 2">
+            </div>
+            <div class="frame" style="--delay: 0.4s">
+                <img src="" alt="Portrait 3">
+            </div>
+        </div>
+    </header>
+
+    <section class="categories">
+        <div class="category-tabs">
+            <button class="tab-btn active" data-category="all">All</button>
+            <button class="tab-btn" data-category="studio">Studio</button>
+            <button class="tab-btn" data-category="outdoor">Outdoor</button>
+            <button class="tab-btn" data-category="fashion">Fashion</button>
+            <button class="tab-btn" data-category="corporate">Corporate</button>
+        </div>
+    </section>
+
+    <section class="portrait-gallery">
+        <div class="masonry-grid">
+            <!-- Studio Portraits -->
+            <div class="grid-item" data-category="studio">
+                <div class="image-wrapper">
+                    <img src="https://media.macphun.com/img/uploads/customer/blog/2093/166989724663889c1e432db7.83689614.jpeg?q=85&w=1680" alt="Studio Portrait">
+                    <div class="overlay">
+                        <h3>Studio Elegance</h3>
+                        <p>Professional Studio Session</p>
+                        <button class="expand-btn"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Outdoor Portraits -->
+            <div class="grid-item" data-category="outdoor">
+                <div class="image-wrapper">
+                    <img src="https://hdrphotos.com/wp-content/uploads/2021/04/Mont-St-Michel-pano-6348-4k.jpg" alt="Outdoor Portrait">
+                    <div class="overlay">
+                        <h3>Natural Light</h3>
+                        <p>Golden Hour Session</p>
+                        <button class="expand-btn"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fashion Portraits -->
+            <div class="grid-item" data-category="fashion">
+                <div class="image-wrapper">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5607a923e4b02ca27d321d51/1592359827292-UT4H6R1JHX4X6QSQBFTW/Kimono-photoshoot-asakusa-tokyo-200603-36.jpg" alt="Fashion Portrait">
+                    <div class="overlay">
+                        <h3>Fashion Forward</h3>
+                        <p>Editorial Style</p>
+                        <button class="expand-btn"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Corporate Portraits -->
+            <div class="grid-item" data-category="corporate">
+                <div class="image-wrapper">
+                    <img src="https://media.cntraveler.com/photos/5ec3001741269ff2d4f2eb6f/16:9/w_2560%2Cc_limit/TheLouvreMuseum-Paris-2020-GettyImages-108309980.jpg" alt="Corporate Portrait">
+                    <div class="overlay">
+                        <h3>Professional Edge</h3>
+                        <p>Corporate Headshot</p>
+                        <button class="expand-btn"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more items for each category -->
+            <div class="grid-item" data-category="studio">
+                <div class="image-wrapper">
+                    <img src="https://cdn.pixabay.com/photo/2021/07/17/20/20/new-church-6474013_1280.jpg" alt="Studio Model">
+                    <div class="overlay">
+                        <h3>Studio Magic</h3>
+                        <p>Creative Lighting</p>
+                        <button class="expand-btn"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item" data-category="outdoor">
+                <div class="image-wrapper">
+                    <img src="https://www.photographingspace.com/wp-content/uploads/2016/04/feature-DistantLands-img_7453-panorama.jpg" alt="Nature Portrait">
+                    <div class="overlay">
+                        <h3>Natural Beauty</h3>
+                        <p>Environmental Portrait</p>
+                        <button class="expand-btn"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item" data-category="outdoor">
+                <div class="image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1505142468610-359e7d316be0?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8b2NlYW58ZW58MHx8MHx8fDA%3D" alt="Nature Portrait">
+                    <div class="overlay">
+                        <h3>Abstragasm</h3>
+                        <p>Wonder Click</p>
+                        <button class="expand-btn"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="style-showcase">
+        <div class="showcase-content">
+            <div class="showcase-text">
+                <h2>My Style</h2>
+                <p>Capturing the essence of each individual through creative lighting, unique perspectives, and genuine emotions.</p>
+            </div>
+            <div class="showcase-images">
+                <div class="image-stack">
+                    <img src="https://media.istockphoto.com/id/124676510/photo/close-up-of-jack-of-spades-playing-card.jpg?s=612x612&w=0&k=20&c=JepUaNknZV_d4_keuzKZWWTmUTt--t85FH9d3t0HrWc=" alt="Style 1">
+                    <img src="https://media.istockphoto.com/id/94924367/photo/queen-of-spades.jpg?s=612x612&w=0&k=20&c=92LINziujTwfGRpwRec0zDq7AQOtB0RKmufK_7IcvZI=">
+                    <img src="https://media.istockphoto.com/id/458126511/photo/playing-card-king-of-spades.jpg?s=612x612&w=0&k=20&c=izZIfVQt5rsQXvnpVQdSW8erqOgZdbOQsq8IZ2E3zpg=" alt="Style 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="lightbox">
+        <button class="close-lightbox"><i class="fas fa-times"></i></button>
+        <button class="prev-img"><i class="fas fa-chevron-left"></i></button>
+        <button class="next-img"><i class="fas fa-chevron-right"></i></button>
+        <div class="lightbox-content">
+            <img src="" alt="Lightbox Image">
+            <div class="image-info">
+                <h3></h3>
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Let's Create Your Story</h3>
+                <p>Every portrait session is a unique experience.</p>
+            </div>
+            <div class="social-links">
+                <a href="#" class="hover-effect"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover-effect"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="hover-effect"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Lens & Light Photography. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="nature-script.js"></script>
+</body>
+</html>
