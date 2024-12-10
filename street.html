@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Street Photography</title>
+    <link rel="stylesheet" href="street-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <nav>
+        <div class="logo">Lens & Light</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="portrait.html">Portrait</a>
+            <a href="wedding.html">Wedding</a>
+            <a href="street.html" class="active">Street</a>
+            <a href="nature.html">Nature</a>
+        </div>
+        <div class="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <header class="street-hero">
+        <div class="hero-content">
+            <h1 class="urban-text">Urban Stories</h1>
+            <p class="subtitle">Life Through the Lens</p>
+        </div>
+        <div class="city-silhouette"></div>
+    </header>
+
+    <section class="categories">
+        <div class="category-tabs">
+            <button class="tab-btn active" data-category="all">All Scenes</button>
+            <button class="tab-btn" data-category="urban">Urban Life</button>
+            <button class="tab-btn" data-category="architecture">Architecture</button>
+            <button class="tab-btn" data-category="people">People</button>
+            <button class="tab-btn" data-category="night">Night</button>
+        </div>
+    </section>
+
+    <section class="street-gallery">
+        <div class="masonry-grid">
+            <!-- Urban Life Photos -->
+            <div class="grid-item" data-category="urban">
+                <div class="image-wrapper">
+                    <img src="https://media.istockphoto.com/id/1188118008/photo/a-night-of-the-neon-street-at-the-downtown-in-shinjuku-tokyo-wide-shot.jpg?s=612x612&w=0&k=20&c=zE2AzmisWd4tRTnqdOxLUcP5SVZSrdkbc8lKOhJ5FvY=" alt="Urban Scene">
+                    <div class="overlay">
+                        <h3>City Pulse</h3>
+                        <p>Urban Exploration</p>
+                        <button class="expand-btn"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Architecture Photos -->
+            <div class="grid-item" data-category="architecture">
+                <div class="image-wrapper">
+                    <img src="https://www.india.com/wp-content/uploads/2024/07/City-Palace.jpg" alt="Architecture">
+                    <div class="overlay">
+                        <h3>Urban Geometry</h3>
+                        <p>Architectural Details</p>
+                        <button class="expand-btn"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- People Photos -->
+            <div class="grid-item" data-category="people">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/736x/15/57/e7/1557e7960739e8edf0dd3c3fe135d58f.jpg" alt="Street People">
+                    <div class="overlay">
+                        <h3>Street Life</h3>
+                        <p>Human Stories</p>
+                        <button class="expand-btn"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Night Photos -->
+            <div class="grid-item" data-category="night">
+                <div class="image-wrapper">
+                    <img src="https://images.pexels.com/photos/219692/pexels-photo-219692.jpeg?cs=srgb&dl=pexels-pixabay-219692.jpg&fm=jpg" alt="Night City">
+                    <div class="overlay">
+                        <h3>Night Lights</h3>
+                        <p>After Dark</p>
+                        <button class="expand-btn"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more items for each category -->
+            <div class="grid-item" data-category="urban">
+                <div class="image-wrapper">
+                    <img src="https://mobilephotoawards.com/wp-content/uploads/2021/02/30035_20201209173110_32902jpg1000px.jpg" alt="Street Life">
+                    <div class="overlay">
+                        <h3>Urban Canvas</h3>
+                        <p>City Stories</p>
+                        <button class="expand-btn"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item" data-category="night">
+                <div class="image-wrapper">
+                    <img src="https://img.freepik.com/free-photo/beautiful-city-manhattan-night_181624-625.jpg" alt="Evening City">
+                    <div class="overlay">
+                        <h3>City Lights</h3>
+                        <p>Evening Atmosphere</p>
+                        <button class="expand-btn"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="urban-perspective">
+        <div class="perspective-content">
+            <h2>The Art of Street Photography</h2>
+            <div class="perspective-grid">
+                <div class="perspective-item">
+                    <i class="fas fa-eye"></i>
+                    <h3>Observation</h3>
+                    <p>Finding beauty in everyday moments</p>
+                </div>
+                <div class="perspective-item">
+                    <i class="fas fa-clock"></i>
+                    <h3>Timing</h3>
+                    <p>Capturing the decisive moment</p>
+                </div>
+                <div class="perspective-item">
+                    <i class="fas fa-compass"></i>
+                    <h3>Exploration</h3>
+                    <p>Discovering hidden stories</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="lightbox">
+        <button class="close-lightbox"><i class="fas fa-times"></i></button>
+        <button class="prev-img"><i class="fas fa-chevron-left"></i></button>
+        <button class="next-img"><i class="fas fa-chevron-right"></i></button>
+        <div class="lightbox-content">
+            <img src="https://i.pinimg.com/1200x/b6/1c/ed/b61ced543e39f580bcc1ea39fdd9e0f4.jpg" alt="Lightbox Image">
+            <div class="image-info">
+                <h3></h3>
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Explore the Urban Jungle</h3>
+                <p>Every street tells a story.</p>
+            </div>
+            <div class="social-links">
+                <a href="#" class="hover-effect"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover-effect"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="hover-effect"><i class="fab fa-flickr"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Lens & Light Photography. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="nature-script.js"></script>
+</body>
+</html>
