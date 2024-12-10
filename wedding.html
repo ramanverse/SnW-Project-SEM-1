@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Photography</title>
+    <link rel="stylesheet" href="wedding-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <nav>
+        <div class="logo">Lens & Light</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="portrait.html">Portrait</a>
+            <a href="wedding.html" class="active">Wedding</a>
+            <a href="street.html">Street</a>
+            <a href="nature.html">Nature</a>
+        </div>
+        <div class="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <header class="wedding-hero">
+        <div class="hero-content">
+            <h1 class="romantic-text">Love Stories</h1>
+            <p class="subtitle">Capturing Timeless Moments</p>
+            <div class="floating-hearts">
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-heart"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="categories">
+        <div class="category-tabs">
+            <button class="tab-btn active" data-category="all">All Moments</button>
+            <button class="tab-btn" data-category="ceremony">Ceremony</button>
+            <button class="tab-btn" data-category="reception">Reception</button>
+            <button class="tab-btn" data-category="couples">Couples</button>
+            <button class="tab-btn" data-category="preparations">Preparations</button>
+        </div>
+    </section>
+
+    <section class="wedding-gallery">
+        <div class="masonry-grid">
+            <!-- Ceremony Photos -->
+            <div class="grid-item" data-category="ceremony">
+                <div class="image-wrapper">
+                    <img src="https://imgcdn.stablediffusionweb.com/2024/9/21/64a0a5d1-55d5-42eb-bcb4-5647af084c57.jpg" alt="Wedding Ceremony">
+                    <div class="overlay">
+                        <h3>Sacred Vows</h3>
+                        <p>The Perfect Union</p>
+                        <button class="expand-btn"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reception Photos -->
+            <div class="grid-item" data-category="reception">
+                <div class="image-wrapper">
+                    <img src="https://cdn.shopify.com/s/files/1/0524/7769/0025/files/crystal_springs.webp" alt="Wedding Reception">
+                    <div class="overlay">
+                        <h3>Celebration of Love</h3>
+                        <p>Joyful Moments</p>
+                        <button class="expand-btn"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+            </div>
+s
+            <!-- Couples Photos -->
+            <div class="grid-item" data-category="couples">
+                <div class="image-wrapper">
+                    <img src="https://images.hindustantimes.com/rf/image_size_960x540/HT/p2/2018/11/28/Pictures/_3c2017da-f31f-11e8-84c6-a70c31b0a588.PNG" alt="Wedding Couple">
+                    <div class="overlay">
+                        <h3>Forever Together</h3>
+                        <p>Romantic Portraits</p>
+                        <button class="expand-btn"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Preparations Photos -->
+            <div class="grid-item" data-category="preparations">
+                <div class="image-wrapper">
+                    <img src="https://marketplace.canva.com/EAFLgnZkKSw/1/0/1600w/canva-white-simple-wedding-photo-collage-X6svVq7Rzvo.jpg" alt="Wedding Preparation">
+                    <div class="overlay">
+                        <h3>Getting Ready</h3>
+                        <p>Beautiful Beginnings</p>
+                        <button class="expand-btn"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more items for each category -->
+            <div class="grid-item" data-category="ceremony">
+                <div class="image-wrapper">
+                    <img src="https://cdn10.bostonmagazine.com/wp-content/uploads/sites/2/2019/06/wedding-arch-p.jpg" alt="Wedding Altar">
+                    <div class="overlay">
+                        <h3>The Altar</h3>
+                        <p>Sacred Moments</p>
+                        <button class="expand-btn"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item" data-category="reception">
+                <div class="image-wrapper">
+                    <img src="https://cdn.shootdotedit.com/wp-content/uploads/2022/11/14170516/first-dance-photography-%40jorgesantiagophoto.jpg" alt="First Dance">
+                    <div class="overlay">
+                        <h3>First Dance</h3>
+                        <p>Magical Moments</p>
+                        <button class="expand-btn"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="love-story">
+        <div class="story-content">
+            <h2>Every Love Story is Beautiful</h2>
+            <div class="story-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-ring"></i></div>
+                    <div class="timeline-content">
+                        <h3>The Proposal</h3>
+                        <p>Capturing the surprise and joy</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-church"></i></div>
+                    <div class="timeline-content">
+                        <h3>The Ceremony</h3>
+                        <p>Documenting sacred moments</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-glass-cheers"></i></div>
+                    <div class="timeline-content">
+                        <h3>The Celebration</h3>
+                        <p>Preserving joyful memories</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="lightbox">
+        <button class="close-lightbox"><i class="fas fa-times"></i></button>
+        <button class="prev-img"><i class="fas fa-chevron-left"></i></button>
+        <button class="next-img"><i class="fas fa-chevron-right"></i></button>
+        <div class="lightbox-content">
+            <img src="https://bbcdn.bollywoodbubble.com/wp-content/uploads/2023/08/Vicky-Kaushal-and-Katrina-Kaif-wedding-pic.jpg" alt="Lightbox Image">
+            <div class="image-info">
+                <h3></h3>
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Let's Tell Your Love Story</h3>
+                <p>Every wedding is unique and special.</p>
+            </div>
+            <div class="social-links">
+                <a href="#" class="hover-effect"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover-effect"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="hover-effect"><i class="fab fa-pinterest"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Lens & Light Photography. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="nature-script.js"></script>
+</body>
+</html>
