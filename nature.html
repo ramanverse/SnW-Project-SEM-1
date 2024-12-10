@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Photography</title>
+    <link rel="stylesheet" href="nature-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <nav>
+        <div class="logo">Lens & Light</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="nature.html" class="active">Nature</a>
+            <a href="about.html">About</a>
+        </div>
+        <div class="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <header class="nature-hero">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="Nature's Beauty">Nature's Beauty</h1>
+            <p class="fade-in">Capturing Earth's Most Breathtaking Moments</p>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to Explore</span>
+            <div class="mouse"></div>
+        </div>
+    </header>
+
+    <section class="categories">
+        <div class="category-tabs">
+            <button class="tab-btn active" data-category="all">All</button>
+            <button class="tab-btn" data-category="mountains">Mountains</button>
+            <button class="tab-btn" data-category="forests">Forests</button>
+            <button class="tab-btn" data-category="waterfalls">Waterfalls</button>
+            <button class="tab-btn" data-category="wildlife">Wildlife</button>
+        </div>
+    </section>
+
+    <section class="nature-gallery">
+        <div class="masonry-grid">
+            <div class="grid-item" data-category="mountains">
+                <div class="image-wrapper">
+                    <img src="https://media.istockphoto.com/id/517599616/photo/panorama-view-of-oeschinensee-on-bernese-oberla.jpg?s=612x612&w=0&k=20&c=PkX0ebgjcsBK4_dnDGClLGspqI4bUZqGB-qUyBnoyIo=" alt="Mountain">
+                    <div class="overlay">
+                        <h3>Alpine Majesty</h3>
+                        <p>Swiss Alps</p>
+                        <button class="expand-btn"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item" data-category="forests">
+                <div class="image-wrapper">
+                    <img src="https://www.adobe.com/creativecloud/photography/discover/media_1475d001f72862a5a9ab874bf4a98581b1cb8025b.png?width=750&format=png&optimize=medium" alt="Forest">
+                    <div class="overlay">
+                        <h3>Mystic Woods</h3>
+                        <p>Redwood Forest</p>
+                        <button class="expand-btn"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item" data-category="waterfalls">
+                <div class="image-wrapper">
+                    <img src="https://t3.ftcdn.net/jpg/07/79/36/56/360_F_779365649_w4S9vdqImUi1Fpi6dqK69XKks1z4D19C.jpg" alt="Waterfall">
+                    <div class="overlay">
+                        <h3>Cascading Beauty</h3>
+                        <p>Victoria Falls</p>
+                        <button class="expand-btn"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item" data-category="wildlife">
+                <div class="image-wrapper">
+                    <img src="https://kavaretreat.com/wp-content/uploads/2018/09/WildlifePhotography.jpg" alt="Wildlife">
+                    <div class="overlay">
+                        <h3>Wild Spirit</h3>
+                        <p>African Safari</p>
+                        <button class="expand-btn"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more items for each category -->
+            <div class="grid-item" data-category="mountains">
+                <div class="image-wrapper">
+                    <img src="https://www.mountainphotography.com/images/xl/20141024-Ama-Dablam-Alpenglow-Reflection-1.jpg" alt="Mountain Peak">
+                    <div class="overlay">
+                        <h3>Peak Perfection</h3>
+                        <p>Himalayan Range</p>
+                        <button class="expand-btn"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item" data-category="forests">
+                <div class="image-wrapper">
+                    <img src="https://images.pexels.com/photos/927414/pexels-photo-927414.jpeg?cs=srgb&dl=pexels-arnie-chou-304906-927414.jpg&fm=jpg" alt="Jungle">
+                    <div class="overlay">
+                        <h3>Jungle Mystery</h3>
+                        <p>Amazon Rainforest</p>
+                        <button class="expand-btn"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item" data-category="waterfalls">
+                <div class="image-wrapper">
+                    <img src="https://wallpapers.com/images/hd/a-pristine-4k-quality-image-of-a-spectacular-waterfall-immersed-in-nature-kmkgjt5vbe3oo1la.jpg" alt="Jungle">
+                    <div class="overlay">
+                        <h3>Cataract Elegance</h3>
+                        <p>Skyfall</p>
+                        <button class="expand-btn"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item" data-category="wildlife">
+                <div class="image-wrapper">
+                    <img src="https://static.toiimg.com/photo/113931891.cms" alt="Jungle">
+                    <div class="overlay">
+                        <h3>Penguin perfect</h3>
+                        <p></p>
+                        <button class="expand-btn"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="lightbox">
+        <button class="close-lightbox"><i class="fas fa-times"></i></button>
+        <button class="prev-img"><i class="fas fa-chevron-left"></i></button>
+        <button class="next-img"><i class="fas fa-chevron-right"></i></button>
+        <div class="lightbox-content">
+            <img src="" alt="Lightbox Image">
+            <div class="image-info">
+                <h3></h3>
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <section class="parallax-quote">
+        <div class="quote-content">
+            <blockquote>
+                "In nature, nothing is perfect and everything is perfect."
+                <cite>- Alice Walker</cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Explore Nature Through My Lens</h3>
+                <p>Every photograph tells a story of Earth's natural wonders.</p>
+            </div>
+            <div class="social-links">
+                <a href="#" class="hover-effect"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover-effect"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="hover-effect"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Lens & Light Photography. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="nature-script.js"></script>
+</body>
+</html>
