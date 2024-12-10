@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Gallery</title>
+    <link rel="stylesheet" href="gallery-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Lens & Light</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="gallery.html" class="active">Gallery</a>
+            <a href="about.html">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <header class="gallery-header">
+        <h1>Photo Gallery</h1>
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="portrait">Portrait</button>
+            <button class="filter-btn" data-filter="wedding">Wedding</button>
+            <button class="filter-btn" data-filter="street">Street</button>
+        </div>
+    </header>
+
+    <div class="gallery-container">
+        <!-- Nature Photos -->
+        <div class="gallery-item" data-category="nature">
+            <img src="https://images.pexels.com/photos/158063/bellingrath-gardens-alabama-landscape-scenic-158063.jpeg?cs=srgb&dl=pexels-pixabay-158063.jpg&fm=jpg" alt="Nature 1">
+            <div class="item-overlay">
+                <h3>Mountain Vista</h3>
+                <p>Nature Photography</p>
+                <button class="view-btn"><i class="fas fa-expand"></i></button>
+            </div>
+        </div>
+        <div class="gallery-item" data-category="nature">
+            <img src="https://preview.redd.it/ml1cxetylcp61.jpg?width=640&crop=smart&auto=webp&s=f9d505e4ecce052e459a76aa6f3ab6d5f96ced87" alt="Nature 2">
+            <div class="item-overlay">
+                <h3>TATAKAE</h3>
+                <p>Nature Photography</p>
+                <button class="view-btn"><i class="fas fa-expand"></i></button>
+            </div>
+        </div>
+        <div class="gallery-item" data-category="nature">
+            <img src="https://media.istockphoto.com/id/1175730174/photo/chandratal-lake-with-milkyway-background-on-full-moon-night-the-chandratal-lake-is-also-known.jpg?s=170667a&w=0&k=20&c=rvHRdfivDGbUyMWv430qE-ve3_9ZBPDVTJSlYlBJbg8=" alt="Nature 3">
+            <div class="item-overlay">
+                <h3>Paramount Aesthetic</h3>
+                <p>Nature Photography</p>
+                <button class="view-btn"><i class="fas fa-expand"></i></button>
+            </div>
+        </div>
+        <div class="gallery-item" data-category="nature">
+            <img src="https://images.unsplash.com/photo-1484312152213-d713e8b7c053?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2hpdGUlMjBmb3h8ZW58MHx8MHx8fDA%3D" alt="Nature 4">
+            <div class="item-overlay">
+                <h3>Albino Roger</h3>
+                <p>Nature Photography</p>
+                <button class="view-btn"><i class="fas fa-expand"></i></button>
+            </div>
+        </div>
+
+        <!-- Portrait Photos -->
+        <div class="gallery-item" data-category="portrait">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/1c/38/89/3c/beautiful-and-hot-girl.jpg" alt="Portrait 1">
+            <div class="item-overlay">
+                <h3>Elegant Portrait</h3>
+                <p>Portrait Photography</p>
+                <button class="view-btn"><i class="fas fa-expand"></i></button>
+            </div>
+        </div>
+        <div class="gallery-item" data-category="portrait">
+            <img src="https://www.moviespuzzle.com/wp-content/uploads/2024/08/riti6-scaled.jpg" alt="Portrait 2">
+            <div class="item-overlay">
+                <h3>Urban Style</h3>
+                <p>Portrait Photography</p>
+                <button class="view-btn"><i class="fas fa-expand"></i></button>
+            </div>
+        </div>
+        <div class="gallery-item" data-category="portrait">
+            <img src="https://www.theinspiredeye.net/wp-content/uploads/2020/06/black-and-white-street-photography-1.jpg" alt="Portrait 3">
+            <div class="item-overlay">
+                <h3>Urban Style</h3>
+                <p>Portrait Photography</p>
+                <button class="view-btn"><i class="fas fa-expand"></i></button>
+            </div>
+        </div>
+        <div class="gallery-item" data-category="portrait">
+            <img src="https://images.unsplash.com/photo-1592390140955-b250e159744a?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHNleHklMjBwb3J0cmFpdHxlbnwwfHwwfHx8MA%3D%3D" alt="Portrait 4">
+            <div class="item-overlay">
+                <h3>Urban Style</h3>
+                <p>Portrait Photography</p>
+                <button class="view-btn"><i class="fas fa-expand"></i></button>
+            </div>
+        </div>
+
+        <!-- Wedding Photos -->
+        <div class="gallery-item" data-category="wedding">
+            <img src="https://i.pinimg.com/550x/25/93/8a/25938a9e5de1737f3d81c5eaf699980a.jpg" alt="Wedding 1">
+            <div class="item-overlay">
+                <h3>Wedding Bliss</h3>
+                <p>Wedding Photography</p>
+                <button class="view-btn"><i class="fas fa-expand"></i></button>
+            </div>
+        </div>
+        <div class="gallery-item" data-category="wedding">
+            <img src="https://i.pinimg.com/736x/84/f0/7f/84f07f7c6363ff776744cebb2a01f858.jpg" alt="Wedding 2">
+            <div class="item-overlay">
+                <h3>Sacred Moments</h3>
+                <p>Wedding Photography</p>
+                <button class="view-btn"><i class="fas fa-expand"></i></button>
+            </div>
+        </div>
+
+        <!-- Street Photos -->
+        <div class="gallery-item" data-category="street">
+            <img src="https://i.pinimg.com/736x/0c/22/27/0c22277a90d599c487ad510318a1d23d.jpg" alt="Street 1">
+            <div class="item-overlay">
+                <h3>City Life</h3>
+                <p>Street Photography</p>
+                <button class="view-btn"><i class="fas fa-expand"></i></button>
+            </div>
+        </div>
+        <div class="gallery-item" data-category="street">
+            <img src="https://static.boredpanda.com/blog/wp-content/uploads/2016/01/tokyo-streets-night-photography-masashi-wakui-fb.png" alt="Street 2">
+            <div class="item-overlay">
+                <h3>Urban Rhythm</h3>
+                <p>Street Photography</p>
+                <button class="view-btn"><i class="fas fa-expand"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox">
+        <button class="close-lightbox"><i class="fas fa-times"></i></button>
+        <button class="prev-img"><i class="fas fa-chevron-left"></i></button>
+        <button class="next-img"><i class="fas fa-chevron-right"></i></button>
+        <div class="lightbox-content">
+            <img src="" alt="Lightbox Image">
+            <div class="image-info">
+                <h3></h3>
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="gallery-script.js"></script>
+</body>
+</html>
